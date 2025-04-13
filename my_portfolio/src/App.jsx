@@ -18,8 +18,17 @@ function App() {
           path="/"
           element={
             <main>
-              <div className="pc-header">
-                <h1></h1>
+              <div className="about-header">
+                <h1>About Me</h1>
+              </div>
+              <div className="about-section">
+                <p>
+                  Hi Im Michael Barney and I am a Software Development student at
+                  Keyin College, specalizing is Python, JavaScript, React,
+                  Amazon Web Services, as well as Product Design. I've put
+                  together a colabration of some of the work I have done so far
+                  in my Journey.
+                </p>
               </div>
             </main>
           }
