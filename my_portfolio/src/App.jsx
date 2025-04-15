@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import About from "./components/About";
+import Projects from "./components/Projects";
 import Header from "./images/Header.png";
+import AWS from "./images/Aws.png";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <img src={Header} width="100%" height="100%" alt="My header" />
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
+          <Link to="/Projects">Projects</Link>
         </nav>
       </header>
 
@@ -18,22 +19,18 @@ function App() {
           path="/"
           element={
             <main>
-              <div className="about-header">
-                <h1>About Me</h1>
-              </div>
-              <div className="about-section">
-                <p>
-                  Hi Im Michael Barney and I am a Software Development student at
-                  Keyin College, specalizing is Python, JavaScript, React,
-                  Amazon Web Services, as well as Product Design. I've put
-                  together a colabration of some of the work I have done so far
-                  in my Journey.
-                </p>
-              </div>
+              <p>
+                Hi Im Michael Barney and I am a Software Development student at
+                Keyin College, specalizing is Python, JavaScript, React, Amazon
+                Web Services, as well as Product Design. I've put together a
+                colabration of some of the work I have done so far in my
+                Journey.
+              </p>
             </main>
           }
         />
-        <Route path="/about" element={<About />} />
+
+        <Route path="/Projects" element={<Projects />} />
       </Routes>
 
       <footer>
