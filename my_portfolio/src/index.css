@@ -19,9 +19,19 @@ body {
   font-size: 1.2vh;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  background-color: #38473d;
+  gap: 3.22vh 3.22vw;
+  padding: 6.45vh 6.45vw;
+  justify-content: center;
+}
+
 header {
   display: grid;
-  grid-template-columns: 2fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 5.64vh auto;
   border-top: 0.07vw solid black;
   background-color: #242424;
@@ -36,7 +46,7 @@ nav {
 }
 
 nav a:link {
-  border: 0.2vh black solid;
+  border: 0.2vh rgb(255, 255, 255) solid;
   padding: 0.7vh;
   border-radius: 1.2vh;
   text-decoration: none;
@@ -45,59 +55,60 @@ nav a:link {
 }
 
 nav a:hover {
-  background-color: rgb(194, 205, 214);
+  background-color: rgb(94, 93, 93);
   transition: background-color 0.6s;
   cursor: pointer;
 }
 
 .header-img {
-  grid-column: 1/1;
+  grid-column: 1/-1;
   grid-row: 1/2;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 3fr;
-  grid-template-rows: 3.22vh auto;
-  background-color: #376b96;
-  gap: 3.22vh 3.22vw;
-  padding: 6.45vh 6.45vw;
-  justify-content: center;
+.contact-heading {
+  grid-column: 1/-1;
+  grid-row: 1/2;
 }
 
 .card {
-  background-color: #5862c5;
+  background-color: #585e58;
   border: 0.24vh solid rgb(0, 0, 0);
   border-radius: 0.8vh;
   box-shadow: 0.15vh 0.15vw hsl(0, 1%, 16%);
   margin: auto;
 }
 
-.about-header {
-  grid-column: 1/4;
-  grid-row: 1/2;
-  text-align: center;
+.about-img {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  justify-content: center;
+  padding: 2vw;
 }
 
 .about-section {
-  grid-column: 1/4;
-  grid-row: 2/3;
+  grid-column: 1/-1;
+  grid-row: 1/2;
   padding: 4.84vh;
   border: 0.2vh solid black;
   border-radius: 1.2vh;
   width: 100%;
 }
-/* 
-.social-header {
-  grid-column: 1/4;
-  grid-row: 9/10;
-  text-align: center;
+
+.img-section {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
 }
 
-.our-socials {
-  grid-column: 1/4;
-  grid-row: 11/12;
-} */
+.python {
+  margin-right: 80px;
+}
 
 footer {
   grid-column: 1/-1;
@@ -110,8 +121,54 @@ footer {
   background-color: #242424;
 }
 
+p {
+  font-size: larger;
+}
+
+/* Contact Section */
+
+.contact-section {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  padding: 4.84vh;
+  border: 0.2vh solid black;
+  border-radius: 1.2vh;
+  width: 80%;
+  text-align: center;
+}
+
+.contact-heading {
+  text-align: center;
+}
+
+.contact-text {
+  text-align: left;
+}
+
+.contact-img {
+  border-radius: 50%;
+  margin-bottom: 3vh;
+}
+
+/* Project Section */
+
+.project-section {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  padding: 4.84vh;
+  border: 0.2vh solid black;
+  border-radius: 1.2vh;
+  width: 100%;
+  text-align: center;
+}
+
 /* DropDown */
 
 .DD-button {
   background-color: #242424;
+  border-radius: 0.5vh;
+  height: 2.5vh;
+  margin-bottom: 1vh;
+  text-align: center;
+  font-size: large;
 }
